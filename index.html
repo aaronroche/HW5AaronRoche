@@ -1,0 +1,76 @@
+<!--
+  File: index.html
+  GUI Assignment: HW5 - Scrabble Representation
+  Aaron Roche
+  aaron_roche@student.uml.edu
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <!-- Meta tags for character set, compatibility, and viewport -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS files -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+    integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+  <!-- Custom stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- jQuery library -->
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+
+  <!-- jQuery validation plugin -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"></script>
+
+  <!-- jQuery UI CSS and JavaScript files -->
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+</head>
+
+<body>
+
+  <!-- Main title -->
+  <h1 id="pageTitle">Scrabble!</h1>
+
+  <!-- Droppable area for Scrabble tiles -->
+  <div class="row">
+    <div id="droppable" class="ui-widget-header">
+      <!-- Columns for each Scrabble tile drop zone -->
+      <div class="col-xs-1"><div class='drop'></div></div>
+      <div class="col-xs-1"><div class='drop'></div></div>
+      <div class="col-xs-1"><div class='drop'></div></div>
+      <div class="col-xs-1"><div class='drop'></div></div>
+      <div class="col-xs-1"><div class='drop'></div></div>
+      <div class="col-xs-1"><div class='drop'></div></div>
+      <div class="col-xs-1"><div class='drop'></div></div>
+    </div>
+  </div><br><br>
+
+  <!-- Information and control section -->
+  <div id="center">
+    <p id="pScore">Points: </p>
+    <p id="roundScore">0</p>
+    <p id="pRemain">Tiles Left: </p>
+    <p id="remaining">93</p>
+    <button type="button" id="NextWord">New Word</button>
+    <button type="button" id="StartOver">RESET</button>
+  </div><br><br>
+
+  <!-- Display message area -->
+  <p id="message"></p>
+
+  <!-- Custom JavaScript file -->
+  <script src="js/app.js"></script>
+
+</body>
+
+</html>

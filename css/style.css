@@ -1,0 +1,112 @@
+/*
+  File: style.css
+  GUI Assignment: HW5 - Scrabble Representation
+  Aaron Roche
+  aaron_roche@student.uml.edu
+*/
+
+/* Set background color for the entire body */
+body {
+    background-color: rgb(71, 126, 255);
+}
+
+/* Style for images */
+img {
+    margin-left: auto;
+    margin-right: auto;
+    width: 60px;
+    height: 60px;
+    margin-top: 50px;
+    padding-left: 7px;
+}
+
+/* Style for title (Scrabble!) */
+h1 {
+    text-align: center;
+}
+
+/* Styling for the Scrabble tile drop zones */
+.drop {
+    width: 66px;
+    height: 70px;
+    padding: 0px;
+}
+
+/* Styling for columns with class col-xs-1 */
+.col-xs-1 {
+    padding-left: 0px;
+    padding-right: 0px;
+    width: 66px;
+    height: 70px;
+}
+
+/* Styling for the draggable Scrabble tile holder */
+#draggable {
+    background-image: url("graphics_data/scrabble-tile-holder.png");
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    width: 670px;
+    height: 150px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+/* Styling for the droppable area (Scrabble board) */
+#droppable {
+    background-image: url("graphics_data/Scrabble_Board_OneLine.png");
+    background-size: contain;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1000px;
+    height: 80px;
+    background-repeat: no-repeat;
+}
+
+/* Styling for the center section */
+#center > p {
+    display: inline;
+    float: left;
+}
+
+#center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Additional styling for specific elements within the center section */
+#pRemain {
+    margin-left: 40px;
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+#pScore {
+    margin-left: 40px;
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+#StartOver {
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+#NextWord {
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+/* Styling for the message, remaining, and roundScore elements */
+#message {
+    text-align: center;
+}
+
+#remaining {
+    text-align: left;
+}
+
+#roundScore {
+    text-align: left;
+}
